@@ -6,26 +6,29 @@ export default function Header() {
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50 py-4 sm:py-8 bg-transparent">
-      <div className="w-full px-5 sm:px-12 lg:px-16 flex items-center justify-between">
+      <div className="w-full px-5 sm:px-12 lg:px-16 flex items-center justify-between gap-6">
         
-        {/* Mobile Brand / Title */}
-        <div className="lg:hidden">
-          <a href="#hero" className="font-serif text-lg font-normal text-black tracking-wider">
-            ORION
+        {/* Logo + nav stay on the sky side — never over the building */}
+        <div className="flex items-center gap-8 xl:gap-12 min-w-0 max-w-[58%] lg:max-w-[55%]">
+          <a href="#hero" className="flex-shrink-0 inline-flex items-center">
+            <img
+              src="/assets/inner-logo.png"
+              alt="crio"
+              className="h-7 sm:h-8 lg:h-9 w-auto object-contain"
+            />
           </a>
+
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-[12.5px] uppercase tracking-[2.5px] font-normal text-black whitespace-nowrap">
+            <a href="#hero" className="hover:text-[#c5a059] transition-colors">HOME</a>
+            <a href="#about" className="hover:text-[#c5a059] transition-colors">ABOUT</a>
+            <a href="#projects" className="hover:text-[#c5a059] transition-colors">PROJECTS</a>
+            <a href="#amenities" className="hover:text-[#c5a059] transition-colors">AMENITIES</a>
+            <a href="#contact" className="hover:text-[#c5a059] transition-colors">CONTACT</a>
+          </nav>
         </div>
 
-        {/* Far Left Navigation Links - Desktop */}
-        <nav className="hidden lg:flex items-center space-x-10 text-[12.5px] uppercase tracking-[2.5px] font-normal text-black">
-          <a href="#hero" className="hover:text-[#c5a059] transition-colors">HOME</a>
-          <a href="#about" className="hover:text-[#c5a059] transition-colors">ABOUT</a>
-          <a href="#projects" className="hover:text-[#c5a059] transition-colors">PROJECTS</a>
-          <a href="#amenities" className="hover:text-[#c5a059] transition-colors">AMENITIES</a>
-          <a href="#contact" className="hover:text-[#c5a059] transition-colors">CONTACT</a>
-        </nav>
-
-        {/* Right Enquire Now Button - Desktop */}
-        <div className="hidden lg:flex items-center">
+        {/* Enquire stays clear of building on larger screens */}
+        <div className="hidden lg:flex items-center flex-shrink-0 mr-[min(8vw,120px)]">
           <a
             href="#contact"
             className="text-[12px] uppercase tracking-[2px] font-normal text-black border border-black/50 hover:bg-[#d4af37] hover:border-[#d4af37] hover:text-slate-950 px-7 py-2.5 rounded-full transition-all duration-300 bg-transparent"

@@ -20,9 +20,9 @@ export default function HeroBaytley() {
         </picture>
       </div>
 
-      {/* Left-aligned content — matches header horizontal padding */}
-      <div className="relative z-10 w-full px-5 sm:px-12 lg:px-16 pt-16 sm:pt-12">
-        <div className="max-w-xl space-y-4 sm:space-y-6 text-left">
+      {/* Left-aligned content with extra breathing room */}
+      <div className="relative z-10 w-full px-8 sm:px-16 lg:px-24 xl:px-28 pt-24 sm:pt-20 pb-10">
+        <div className="max-w-xl space-y-5 sm:space-y-7 text-left">
           
           <div className="text-[10px] sm:text-[14px] uppercase tracking-[3px] sm:tracking-[3.5px] font-normal text-slate-700">
             WHERE VISION MEETS FUTURE
