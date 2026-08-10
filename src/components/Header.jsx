@@ -37,13 +37,14 @@ export default function Header() {
           </a>
         </div>
 
-        {/* Mobile Menu Button Trigger */}
+        {/* Mobile Menu Button — 44px+ tap target */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden text-black p-2 rounded-lg border border-black/25 bg-white/50 focus:outline-none"
+          className="lg:hidden relative text-black min-w-11 min-h-11 w-11 h-11 inline-flex items-center justify-center rounded-lg border border-black/25 bg-white/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a059]"
           aria-label="Toggle Navigation Menu"
+          aria-expanded={mobileMenuOpen}
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
 
       </div>
