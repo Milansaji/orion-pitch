@@ -10,13 +10,13 @@ export default function Header() {
         
         {/* Mobile Brand / Title */}
         <div className="lg:hidden">
-          <a href="#hero" className="font-serif text-lg font-bold text-slate-800 tracking-wider">
+          <a href="#hero" className="font-serif text-lg font-bold text-[#0b192c] tracking-wider">
             ORION
           </a>
         </div>
 
         {/* Far Left Navigation Links - Desktop */}
-        <nav className="hidden lg:flex items-center space-x-10 text-[12.5px] uppercase tracking-[2.5px] font-bold text-slate-800">
+        <nav className="hidden lg:flex items-center space-x-10 text-[12.5px] uppercase tracking-[2.5px] font-bold text-[#0b192c]/90">
           <a href="#hero" className="hover:text-[#c5a059] transition-colors">HOME</a>
           <a href="#about" className="hover:text-[#c5a059] transition-colors">ABOUT</a>
           <a href="#projects" className="hover:text-[#c5a059] transition-colors">PROJECTS</a>
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center">
           <a
             href="#contact"
-            className="text-[12px] uppercase tracking-[2px] font-bold text-slate-800 border border-slate-800 hover:bg-slate-800 hover:text-white px-7 py-2.5 rounded-full transition-all duration-300"
+            className="text-[12px] uppercase tracking-[2px] font-bold text-[#0b192c] border border-[#0b192c]/50 hover:bg-[#d4af37] hover:border-[#d4af37] hover:text-slate-950 px-7 py-2.5 rounded-full transition-all duration-300 bg-transparent"
           >
             ENQUIRE NOW
           </a>
@@ -37,7 +37,7 @@ export default function Header() {
         {/* Mobile Menu Button Trigger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden text-slate-900 p-2 rounded-lg bg-white/40 backdrop-blur-md border border-white/40 shadow-sm focus:outline-none"
+          className="lg:hidden text-[#0b192c] p-2 rounded-lg border border-[#0b192c]/25 bg-white/50 focus:outline-none"
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

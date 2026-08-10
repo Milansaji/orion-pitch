@@ -10,7 +10,7 @@ export default function SanctuarySection() {
           
           {/* LEFT CONTENT */}
           <div className="lg:col-span-6 text-left space-y-5 sm:space-y-6">
-            <span className="text-[10px] sm:text-[11px] uppercase tracking-[3px] font-bold text-slate-400 block">
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[3px] font-extrabold text-[#c5a059] block">
               ULTRA LUXURY
             </span>
 
@@ -18,7 +18,7 @@ export default function SanctuarySection() {
               A Sanctuary of Architectural Brilliance
             </h2>
 
-            <p className="text-slate-600 text-xs sm:text-base leading-relaxed font-light max-w-lg">
+            <p className="text-slate-700 text-xs sm:text-base leading-relaxed font-normal max-w-lg">
               Discover unparalleled elegance with our exclusive collection of 3, 4 &amp; 5 BHK luxury residences. Designed for the discerning few, Orio Florenza seamlessly blends modern aesthetics with functional superiority.
             </p>
 
