@@ -6,19 +6,19 @@ export default function Header() {
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50 py-4 sm:py-8 bg-transparent">
-      <div className="w-full px-5 sm:px-12 lg:px-16 flex items-center justify-between gap-6">
+      <div className="w-full pl-12 pr-5 sm:pl-24 sm:pr-12 lg:pl-32 lg:pr-16 xl:pl-40 flex items-center justify-between gap-6">
         
         {/* Logo + nav stay on the sky side — never over the building */}
-        <div className="flex items-center gap-8 xl:gap-12 min-w-0 max-w-[58%] lg:max-w-[55%]">
+        <div className="flex items-center gap-10 xl:gap-14 min-w-0 max-w-[58%] lg:max-w-[55%]">
           <a href="#hero" className="flex-shrink-0 inline-flex items-center">
             <img
               src="/assets/inner-logo.png"
               alt="crio"
-              className="h-7 sm:h-8 lg:h-9 w-auto object-contain"
+              className="h-10 sm:h-11 lg:h-12 w-auto object-contain"
             />
           </a>
 
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-[12.5px] uppercase tracking-[2.5px] font-normal text-black whitespace-nowrap">
+          <nav className="hidden lg:flex items-center gap-7 xl:gap-9 pl-2 text-[12.5px] uppercase tracking-[2.5px] font-normal text-black whitespace-nowrap">
             <a href="#hero" className="hover:text-[#c5a059] transition-colors">HOME</a>
             <a href="#about" className="hover:text-[#c5a059] transition-colors">ABOUT</a>
             <a href="#projects" className="hover:text-[#c5a059] transition-colors">PROJECTS</a>
