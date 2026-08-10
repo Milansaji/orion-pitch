@@ -20,28 +20,28 @@ export default function HeroBaytley() {
         </picture>
       </div>
 
-      {/* Left-aligned content on bright sky area */}
-      <div className="relative z-10 w-full px-5 sm:pl-12 lg:pl-16 pr-5 sm:pr-6 pt-16 sm:pt-12">
-        <div className="max-w-xl space-y-4 sm:space-y-6">
+      {/* Left-aligned content — matches header horizontal padding */}
+      <div className="relative z-10 w-full px-5 sm:px-12 lg:px-16 pt-16 sm:pt-12">
+        <div className="max-w-xl space-y-4 sm:space-y-6 text-left">
           
-          <div className="text-[10px] sm:text-[11px] uppercase tracking-[3px] sm:tracking-[3.5px] font-extrabold text-slate-700">
+          <div className="text-[10px] sm:text-[14px] uppercase tracking-[3px] sm:tracking-[3.5px] font-normal text-slate-700">
             WHERE VISION MEETS FUTURE
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-[88px] text-[#0b192c] leading-[1.08] sm:leading-[1.05] tracking-[-1px] font-semibold">
+          <h1 className="text-4xl sm:text-6xl lg:text-[86px] text-[#0b192c] leading-[1.08] sm:leading-[1.05] tracking-[-1px] font-normal text-left">
             Architecture<br />
             Beyond<br />
-            <span className="italic text-[#c5a059] font-medium">Imagination.</span>
+            <span className="text-[#c5a059] font-normal">Imagination.</span>
           </h1>
 
-          <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed font-normal max-w-xs sm:max-w-md">
+          <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed font-normal max-w-md text-left">
             Redefining tomorrow with iconic design, sustainable living, and spaces that inspire generations.
           </p>
 
           <div className="pt-2">
             <a
               href="#projects"
-              className="inline-flex items-center space-x-3 text-[11px] sm:text-xs uppercase tracking-[2px] font-semibold text-[#0b192c] border border-[#c5a059]/60 bg-[#e8dcc8]/90 hover:bg-[#d4af37] px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all duration-300 group"
+              className="inline-flex items-center space-x-3 text-[12px] sm:text-xs uppercase tracking-[2px] font-normal text-[#0b192c] border border-[#c5a059]/60 bg-[#e8dcc8]/90 hover:bg-[#d4af37] px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all duration-300 group"
             >
               <span>EXPLORE PROJECTS</span>
               <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0b192c]" />

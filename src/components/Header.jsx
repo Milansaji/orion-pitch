@@ -10,13 +10,13 @@ export default function Header() {
         
         {/* Mobile Brand / Title */}
         <div className="lg:hidden">
-          <a href="#hero" className="font-serif text-lg font-bold text-[#0b192c] tracking-wider">
+          <a href="#hero" className="font-serif text-lg font-normal text-black tracking-wider">
             ORION
           </a>
         </div>
 
         {/* Far Left Navigation Links - Desktop */}
-        <nav className="hidden lg:flex items-center space-x-10 text-[12.5px] uppercase tracking-[2.5px] font-bold text-[#0b192c]/90">
+        <nav className="hidden lg:flex items-center space-x-10 text-[12.5px] uppercase tracking-[2.5px] font-normal text-black">
           <a href="#hero" className="hover:text-[#c5a059] transition-colors">HOME</a>
           <a href="#about" className="hover:text-[#c5a059] transition-colors">ABOUT</a>
           <a href="#projects" className="hover:text-[#c5a059] transition-colors">PROJECTS</a>
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center">
           <a
             href="#contact"
-            className="text-[12px] uppercase tracking-[2px] font-bold text-[#0b192c] border border-[#0b192c]/50 hover:bg-[#d4af37] hover:border-[#d4af37] hover:text-slate-950 px-7 py-2.5 rounded-full transition-all duration-300 bg-transparent"
+            className="text-[12px] uppercase tracking-[2px] font-normal text-black border border-black/50 hover:bg-[#d4af37] hover:border-[#d4af37] hover:text-slate-950 px-7 py-2.5 rounded-full transition-all duration-300 bg-transparent"
           >
             ENQUIRE NOW
           </a>
@@ -37,7 +37,7 @@ export default function Header() {
         {/* Mobile Menu Button Trigger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden text-[#0b192c] p-2 rounded-lg border border-[#0b192c]/25 bg-white/50 focus:outline-none"
+          className="lg:hidden text-black p-2 rounded-lg border border-black/25 bg-white/50 focus:outline-none"
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -49,18 +49,18 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-x-0 top-16 bg-slate-950/98 border-b border-white/10 px-6 py-8 space-y-6 text-left backdrop-blur-2xl shadow-2xl z-50">
           <nav className="flex flex-col space-y-4">
-            <a href="#hero" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-bold text-white hover:text-[#c5a059]">HOME</a>
-            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-bold text-white hover:text-[#c5a059]">ABOUT</a>
-            <a href="#projects" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-bold text-white hover:text-[#c5a059]">PROJECTS</a>
-            <a href="#amenities" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-bold text-white hover:text-[#c5a059]">AMENITIES</a>
-            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-bold text-white hover:text-[#c5a059]">CONTACT</a>
+            <a href="#hero" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-normal text-white hover:text-[#c5a059]">HOME</a>
+            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-normal text-white hover:text-[#c5a059]">ABOUT</a>
+            <a href="#projects" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-normal text-white hover:text-[#c5a059]">PROJECTS</a>
+            <a href="#amenities" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-normal text-white hover:text-[#c5a059]">AMENITIES</a>
+            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-sm uppercase tracking-[2.5px] font-normal text-white hover:text-[#c5a059]">CONTACT</a>
           </nav>
 
           <div className="pt-2 border-t border-white/10">
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="inline-block text-center text-xs uppercase tracking-[2px] font-bold text-[#c5a059] border border-[#c5a059] hover:bg-[#c5a059] hover:text-slate-950 w-full py-3 rounded-full transition-all"
+              className="inline-block text-center text-xs uppercase tracking-[2px] font-normal text-[#c5a059] border border-[#c5a059] hover:bg-[#c5a059] hover:text-slate-950 w-full py-3 rounded-full transition-all"
             >
               ENQUIRE NOW
             </a>
