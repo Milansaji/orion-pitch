@@ -1,7 +1,23 @@
 import React, { useState } from 'react';
 
+const BHK_INTERIORS = {
+  '3 BHK': {
+    src: '/assets/interior/WhatsApp Image 2026-08-10 at 2.44.34 PM(3).jpeg',
+    alt: 'Reading lounge with velvet armchair',
+  },
+  '4 BHK': {
+    src: '/assets/interior/WhatsApp Image 2026-08-10 at 2.44.33 PM(1).jpeg',
+    alt: 'Sunlit living salon with marble walls',
+  },
+  '5 BHK': {
+    src: '/assets/interior/WhatsApp Image 2026-08-10 at 2.44.33 PM.jpeg',
+    alt: 'Master bedroom suite with wood accents',
+  },
+};
+
 export default function SanctuarySection() {
   const [activeBhk, setActiveBhk] = useState('4 BHK');
+  const activeImage = BHK_INTERIORS[activeBhk];
 
   return (
     <section id="about" className="py-16 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
@@ -42,10 +58,11 @@ export default function SanctuarySection() {
 
           {/* RIGHT SHOWCASE IMAGE */}
           <div className="lg:col-span-6">
-            <div className="relative rounded-sm overflow-hidden border border-slate-200 shadow-xl group aspect-square bg-slate-100">
+            <div className="relative rounded-sm overflow-hidden border border-slate-200 shadow-xl group aspect-[4/5] sm:aspect-square bg-slate-100">
               <img
-                src="/assets/orion_images/florenza1.jpg"
-                alt="Orio Florenza Luxury Villa Poster"
+                key={activeBhk}
+                src={activeImage.src}
+                alt={activeImage.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>

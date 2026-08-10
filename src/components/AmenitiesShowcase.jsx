@@ -1,22 +1,21 @@
 import React from 'react';
-import { Waves, Sparkles, Trees } from 'lucide-react';
 
 const AMENITIES = [
   {
-    icon: Waves,
     title: 'Infinity Pool',
-    desc: 'A breathtaking expanse of water seamlessly merging with the horizon.'
+    desc: 'A breathtaking expanse of water seamlessly merging with the horizon.',
+    image: '/assets/interior/WhatsApp Image 2026-08-10 at 2.44.34 PM.jpeg',
   },
   {
-    icon: Sparkles,
     title: 'Private Terrace',
-    desc: 'Exclusive elevated spaces designed for intimate gatherings.'
+    desc: 'Exclusive elevated spaces designed for intimate gatherings.',
+    image: '/assets/interior/WhatsApp Image 2026-08-10 at 2.44.34 PM(1).jpeg',
   },
   {
-    icon: Trees,
-    title: 'Landscaped Gardens',
-    desc: 'Meticulously curated green spaces bringing nature to your doorstep.'
-  }
+    title: 'Living Galleries',
+    desc: 'Sunlit interiors with marble, timber, and curated quiet luxury.',
+    image: '/assets/interior/WhatsApp Image 2026-08-10 at 2.44.34 PM(2).jpeg',
+  },
 ];
 
 export default function AmenitiesShowcase() {
@@ -24,7 +23,6 @@ export default function AmenitiesShowcase() {
     <section id="amenities" className="py-24 bg-white text-slate-900 border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
         
-        {/* Section Header */}
         <div className="mb-16 space-y-2">
           <span className="text-[11px] uppercase tracking-[3px] font-bold text-slate-400 block">
             UNCOMPROMISING LIFESTYLE
@@ -34,24 +32,24 @@ export default function AmenitiesShowcase() {
           </h2>
         </div>
 
-        {/* 3 Amenities Columns */}
-        <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
-          {AMENITIES.map((item, idx) => {
-            const IconComponent = item.icon;
-            return (
-              <div key={idx} className="space-y-4 max-w-sm mx-auto">
-                <div className="w-12 h-12 mx-auto flex items-center justify-center text-slate-800">
-                  <IconComponent className="w-8 h-8 stroke-[1.2]" />
-                </div>
-                <h3 className="text-xl font-serif font-normal text-[#061a23]">
-                  {item.title}
-                </h3>
-                <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-light">
-                  {item.desc}
-                </p>
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+          {AMENITIES.map((item) => (
+            <div key={item.title} className="space-y-4 text-left max-w-sm mx-auto w-full">
+              <div className="aspect-[4/5] overflow-hidden bg-slate-100 border border-slate-200">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
+                />
               </div>
-            );
-          })}
+              <h3 className="text-xl font-serif font-normal text-[#061a23]">
+                {item.title}
+              </h3>
+              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-light">
+                {item.desc}
+              </p>
+            </div>
+          ))}
         </div>
 
       </div>
